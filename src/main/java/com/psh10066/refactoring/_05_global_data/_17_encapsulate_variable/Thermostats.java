@@ -1,0 +1,51 @@
+package com.psh10066.refactoring._05_global_data._17_encapsulate_variable;
+
+public class Thermostats {
+
+    private static Integer targetTemperature = 70;
+
+    private static Boolean heating = true;
+
+    private static Boolean cooling = false;
+
+    private static Boolean fahrenheit = true;
+
+    public static Integer getTargetTemperature() {
+        return targetTemperature;
+    }
+
+    public static void setTargetTemperature(Integer targetTemperature) {
+        Thermostats.targetTemperature = targetTemperature;
+    }
+
+    public static Boolean getHeating() {
+        return heating;
+    }
+
+    public static void setHeating(Boolean heating) {
+        // TODO validation
+        Thermostats.heating = heating;
+        // TODO notify
+    }
+
+    public static Boolean getCooling() {
+        return cooling;
+    }
+
+    public static void setCooling(Boolean cooling) {
+        Thermostats.cooling = cooling;
+    }
+
+    public static Boolean getFahrenheit() {
+        return fahrenheit;
+    }
+
+    public static void setFahrenheit(Boolean fahrenheit) {
+        Thermostats.fahrenheit = fahrenheit;
+    }
+
+    public static void setReadInFahrenheit(Boolean fahrenheit) {
+        // TODO : 다른 메서드로 점진적 교체 가능
+        Thermostats.fahrenheit = fahrenheit;
+    }
+}
