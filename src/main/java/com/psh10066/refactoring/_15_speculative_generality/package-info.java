@@ -1,0 +1,1 @@
+package com.psh10066.refactoring._15_speculative_generality;
