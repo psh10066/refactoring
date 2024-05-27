@@ -1,0 +1,1 @@
+package com.psh10066.refactoring._18_middle_man;
